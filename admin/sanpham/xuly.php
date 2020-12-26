@@ -9,7 +9,12 @@ if (isset($_POST['xlthem'])) {
 	$dongia = $_POST['dongia'];
 	$anhnen = $_FILES['anhnen']['name'];
 	
-	if ($_FILES['anhnen']['type'] != "image/jpeg" || $_FILES['anhnen']['type'] != "image/png") {
+	// if ($_FILES['anhnen']['type'] != "image/jpeg" || $_FILES['anhnen']['type'] != "image/png") {
+	// 	header('location:../index.php?action=sanpham&view=themsp&thongbao=loi');
+	// 	exit;
+	// }
+	$ex = pathinfo($anhnen , PATHINFO_EXTENSION);
+	if ($ex != "jpeg" || $ex != "png") {
 		header('location:../index.php?action=sanpham&view=themsp&thongbao=loi');
 		exit;
 	}
