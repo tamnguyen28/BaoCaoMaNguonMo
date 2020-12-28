@@ -1,4 +1,4 @@
-<?php   $sql_bl="SELECT * FROM `binhluan` WHERE `MaSP`='".$masp."' ORDER BY ThoiGian DESC ";
+﻿<?php   $sql_bl="SELECT * FROM `binhluan` WHERE `MaSP`='".$masp."' ORDER BY ThoiGian DESC ";
             $query4=mysqli_query($conn,$sql_bl);?>
            <h5>Bình Luận</h5><hr>
 <?php 		while ( $kq4=mysqli_fetch_array($query4)) { 
@@ -25,7 +25,8 @@
 		    	<div class="col-md-12">
 		        	<div class="form-group">
 					  <label for="comment">Comment:</label>
-					  <textarea class="form-control" rows="3"  name="noidung"></textarea>
+<textarea class="form-control" rows="3"  name="noidung"></textarea> 
+					  
 					</div>
 		        </div>
 			</div>
