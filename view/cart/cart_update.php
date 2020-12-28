@@ -191,3 +191,4 @@ if(isset($_GET['xoa1'])){
 	?>
 </body>
 </html>
+<h1>tron nhanh</h1>
