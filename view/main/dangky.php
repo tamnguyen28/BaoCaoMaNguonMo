@@ -19,6 +19,7 @@
       <div class="col-md-12"> 
        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
         <input name="tenkh" placeholder=" Họ và Tên" class="form-control" type="text" required autofocus> 
+        <!-- <input name="tenkh" placeholder=" Họ và Tên" class="form-control" type="password" required autofocus> -->
        </div> 
       </div> 
      </div> 
@@ -46,14 +47,16 @@
      <div class="form-group"> 
       <div class="col-md-12"> 
        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span> 
-        <input name="pass" placeholder="Password" class="form-control" type="password" required> 
+        <!-- <input name="pass" placeholder="Password" class="form-control" type="password" required>  -->
+        <input name="pass" placeholder="Password" class="form-control" type="password" required>
        </div> 
       </div> 
      </div> 
      <div class="form-group"> 
       <div class="col-md-12"> 
         <hr><p> <a href="index.php?view=login"> Đã có tài khoản. Đăng Nhập</a></p>
-       <button type="submit" name="dangky" class="btn btn-md btn-danger pull-right">Đăng Ký </button> 
+       <!-- <button type="submit" name="dangky" class="btn btn-md btn-danger pull-right">Đăng Ký </button>  -->
+       <button type="submit" name="dangky" class="btn btn-md btn-danger pull-right">Đăng Ký </button>
       </div> 
      </div> 
     </fieldset> 
