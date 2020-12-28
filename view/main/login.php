@@ -56,8 +56,8 @@
     $run_dangnhap=mysqli_query($conn,$sql_dangnhap);
     $dangnhap=mysqli_fetch_array($run_dangnhap);
     $count_dangnhap=mysqli_num_rows($run_dangnhap);
-    // if($count_dangnhap==0) //false
-    if($count_dangnhap==1) //true
+    if($count_dangnhap==0) //false
+    // if($count_dangnhap==1) //true
     {
       echo '<script>alert("Sai tài khoản hoặc mật khẩu ! Xin mời nhập lại .")</script>';
     }else{
