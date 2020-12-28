@@ -1,4 +1,4 @@
-<div class="container-fluid">
+﻿<div class="container-fluid">
     <div class=" alert alert-primary">
       <h4 class="page-title">
         <span class="page-title-icon bg-gradient-primary text-white mr-2">
@@ -26,7 +26,7 @@
     </div>
 
 	<div class="form-group col-sm-4 "></div>
-    <div class="form-group col-sm-3 "><label >&emsp;</label><input type="submit" class="form-control badge-info" name="them" value="Thêm"></div>
+    <div class="form-group col-sm-3 "><label >&emsp;</label><input type="text" class="form-control badge-info" name="them" value="Thêm"></div>
     <hr>	
  </form>
  <br><hr>
