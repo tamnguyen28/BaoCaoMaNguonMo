@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 	include_once('../config/database.php');
 	$mahd=$_GET['mahd'];
 	$sql="select * from chitiethoadon where MaHD=$mahd ";
@@ -11,7 +11,7 @@
     <div class="col-md-12 grid-margin stretch-card">
         <div class="card">
         	<br>
-			<h4 class="m-auto" > HÓA ĐƠN</h4><br><hr>
+			<h4 class="m-auto" > HÓA ĐƠN</h4><br> <hr>
 			<div class="row">
 				<div class="col-md-3"></div>
 				<div class="col-md-3"><h5 style="font-family: Alata;">Mã Hóa Đơn </h5></div>
@@ -24,7 +24,7 @@
 				<div class="col-md-6"><h5 style="font-family: Alata;">: &#160;<?php echo $row2['DiaChiNN'] ?></h5></div>
 				<div class="col-md-3"></div>
 				<div class="col-md-3"><h5 style="font-family: Alata;">SĐT Người Nhận </h5></div>
-				<div class="col-md-6"><h5 style="font-family: Alata;">: &#160;<?php echo $row2['SDTNN'] ?></h5></div>
+				<div class="col-md-6"><h5 style="font-family: Alata;">: &#160;<?php echo $row2['SDTNN'] ?></h5></div> -->
 			</div>
 			<br><hr>
 			
@@ -35,13 +35,13 @@
 					</tr>
 				</thead>
 				<tbody >
-			 <?php $so=0;
+			  <?php $so=0;
 				 while ($row=mysqli_fetch_array($rs)) {
 					 $maSp= $row['MaSP'];
 					 $sqlsp = "SELECT * FROM `sanpham` WHERE `MaSP`= $maSp";
 					 $querysp = mysqli_query($conn,$sqlsp);
 					 $datasp = mysqli_fetch_array($querysp);
-					 $so=$so+$row['ThanhTien']; ?>
+					 $so=$so+$row['ThanhTien']; ?> -->
 					<tr>
 						<td><?php echo $datasp['TenSP']; ?></td>
 						<td><?php echo $row['SoLuong']; ?></td>
