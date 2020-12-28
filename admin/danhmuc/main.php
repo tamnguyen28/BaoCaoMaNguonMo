@@ -4,8 +4,8 @@
 		$view=$_GET['view'];
 		switch ($view) {
 			case 'themdm':
-					 include_once('them1.php');	
-					//  include_once('them.php');	
+					 // include_once('them1.php');	
+					 include_once('them.php');	
 				break;
 			case 'suadm':
 					include_once('sua.php');
