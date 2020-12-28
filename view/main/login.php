@@ -32,7 +32,8 @@
      <div class="form-group"> 
       <div class="col-md-12"> 
         <hr><p > <a style="color: #333; text-decoration: none" href="index.php?view=dangky"> Chưa có tài khoản. Đăng ký</a></p>
-       <button type="submit" name="login" class="btn btn-md btn-dark pull-right">Đăng nhập </button> 
+       <button type="submit" name="login" class="btn btn-md btn-dark pull-right11">Đăng nhập </button> 
+       
       </div> 
      </div> 
     </fieldset> 
@@ -55,13 +56,16 @@
     $run_dangnhap=mysqli_query($conn,$sql_dangnhap);
     $dangnhap=mysqli_fetch_array($run_dangnhap);
     $count_dangnhap=mysqli_num_rows($run_dangnhap);
-    if($count_dangnhap==0){
+    // if($count_dangnhap==0) //false
+    if($count_dangnhap==1) //true
+    {
       echo '<script>alert("Sai tài khoản hoặc mật khẩu ! Xin mời nhập lại .")</script>';
     }else{
       $_SESSION['login']=$dangnhap;
       
                       
       header('location:index.php');
+      // header('location:login.php');
       
     }
                 
