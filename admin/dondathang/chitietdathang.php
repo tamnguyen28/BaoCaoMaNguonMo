@@ -11,7 +11,7 @@
     <div class="col-md-12 grid-margin stretch-card">
         <div class="card">
         	<br>
-			<h4 class="m-auto" > HÓA ĐƠN</h4><br><hr>
+			<h4 class="m-auto" > HÓA ĐƠN</h4><br> <hr>
 			<div class="row">
 				<div class="col-md-3"></div>
 				<div class="col-md-3"><h5 style="font-family: Alata;">Mã Hóa Đơn </h5></div>
