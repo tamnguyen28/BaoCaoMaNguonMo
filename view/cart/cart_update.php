@@ -41,12 +41,13 @@ if(isset($_POST['action'])){
 					 					$cart[]=array('MaSP'=>$item_cart['MaSP'],'TenSP'=>$item_cart['TenSP'],'SoLuong'=>($item_cart['SoLuong'] + $slmua),'Size'=>$item_cart['Size'],'Mau'=>$item_cart['Mau'],'DonGia'=>$item_cart['DonGia']);
 						 				$found=true;
 						 				$loi=0;
-						 				$loisl=0;
+										$loisl=0;
 					 				}else{
 					 					$cart[]=array('MaSP'=>$item_cart['MaSP'],'TenSP'=>$item_cart['TenSP'],'SoLuong'=>($item_cart['SoLuong'] ),'Size'=>$item_cart['Size'],'Mau'=>$item_cart['Mau'],'DonGia'=>$item_cart['DonGia']);
 						 				$found=true;
 						 				$loi=0;
-						 				$loisl=1;
+										$loisl=1;
+										
 					 				}
 					 			
 					 		}
@@ -63,7 +64,6 @@ if(isset($_POST['action'])){
 					 }			
 				}
 				else{
-
 					$_SESSION['cart_product']=$new_cart;
 				}
 		
@@ -88,8 +88,10 @@ if(isset($_POST['action'])){
 		else{
 			if($loisl===0){
 				if($loi===0){
+					
 					header("location:./../../index.php?view=chitietsanpham&masp=".$masp);
 				}else{
+					echo "<script>alert('abc')</script>";
 					header("location:./../../index.php?view=chitietsanpham&tb=sll&masp=".$masp);
 				}
 			}else{
@@ -189,3 +191,4 @@ if(isset($_GET['xoa1'])){
 	?>
 </body>
 </html>
+<h1>tron nhanh</h1>
